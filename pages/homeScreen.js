@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Image, View, Text, AsyncStorage,StyleSheet } from 'react-native';
 import { StackActions } from '@react-navigation/native';
 import { NavigationActions } from 'react-navigation';
-import AnimatedLoader from "react-native-animated-loader";
 
 export default class Homescreen extends Component {
   state={visible:true}
@@ -27,12 +26,12 @@ async componentDidMount(){
                 source={{uri:"https://graphicriver.img.customer.envatousercontent.com/files/270440720/CartoonDogPointer%20p.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=d7ccf47eef9f9a8f679c134cc70bffa5"}} />
         <Text style={{color:"white",fontSize:30,marginTop:0}}>Testing</Text>
         
-        <AnimatedLoader
-        visible={this.state.visible}
-        source={require("../assets/11625-typing-indicator.json")}
-        animationStyle={styles.lottie}
-        speed={1}
-      />
+//         <AnimatedLoader
+//         visible={this.state.visible}
+//         source={require("../assets/11625-typing-indicator.json")}
+//         animationStyle={styles.lottie}
+//         speed={1}
+//       />
       </View>
     )
   }
